@@ -2,7 +2,7 @@ $(document).ready(readyFn);
 
 function readyFn(){
 
-	
+	setProyectoInsertForm();
 }
 
 function setFotoPrincipal(foto){
@@ -27,6 +27,7 @@ function setProyectoInsertForm(){
 }
 
 function insertProyecto(){
+	alert("a");
 	$("#contenido").html("");
 	var xmlHttp = getXMLHttp();
 	var id_proyecto="";
@@ -38,6 +39,7 @@ function insertProyecto(){
 		}
 	}
 	xmlHttp.open("POST", "proyectoInsertAction.php", true);
+
 	var parameters = "titulo="+document.getElementById("title").value+"&descripcion="+document.getElementById("descripcion").value;
 	alert(parameters);
 	xmlHttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");

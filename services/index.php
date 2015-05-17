@@ -2,6 +2,10 @@
 if(!isset($_SESSION)){
     session_start();
 }
+
+require_once("include/Usuario.php");
+$oUsuario = new Usuario();
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -48,8 +52,23 @@ if(!isset($_SESSION)){
                 <div id="home_logo"></div>
                 <hr>
                 <p>Do you have a project that helps solve the needs of your city?<br/>Our HelpBuddies can save you!</p>
-                <?php if ($_SESSION['FBID']){ ?>
-                 <script type="text/javascript">window.location="home.php"</script>
+                <?php if ($_SESSION['FBID']){ 
+                    $id_usuario =$_SESSION['FBID'];
+                    $nombre     =$_SESSION['FULLNAME'];
+                    $email      =$_SESSION['EMAIL'];
+                    $foto       ="https://graph.facebook.com/".$_SESSION['FBID']."/picture";
+                    
+
+                    $isUsuario = $oUsuario->isUsuario($id_usuario);
+                    if($isUsuario == 0){
+                        $oUsuario->insertUsuario($id_usuario, $nombre, $email, $foto);
+                    }else{
+                        $oUsuario->updateUsuario($id_usuario, $nombre, $email, $foto);
+                    }
+                    $datosUsuario = $oUsuario->getUsuario($id_usuario);
+
+                    ?>
+                    <script type="text/javascript">window.location="home.php"</script>
                 <div id="home_user_box">
                     <ul>
                         <li><img src="https://graph.facebook.com/<?php echo $_SESSION['FBID']; ?>/picture"></li>

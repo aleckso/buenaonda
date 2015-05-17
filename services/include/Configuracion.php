@@ -7,15 +7,15 @@ class Configuracion
 	}
 	function getDataBase()
 	{
-		return "tuartesania";
+		return "paranoi5_buenaonda";
 	}
 	function getUserName()
 	{
-		return "tuartesania_user";
+		return "paranoi5_mdev";
 	}
 	function getPassword()
 	{
-		return "tu4rtesani4";
+		return "109bA968@";
 	}
 }
 ?>

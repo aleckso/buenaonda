@@ -9,6 +9,17 @@
 	margin-right: auto;
 }
 
+#home_logo_small{
+	width: 134px;
+	height: 65px;
+	background: url(../img/home_logo2.png);
+	background-repeat: no-repeat;
+	background-size: 134px;
+	position: absolute;
+	top: -321px;
+	left: 560px;
+}
+
 #facebook_btn{
 	width: 250px;
 	height: 48px;
@@ -219,23 +230,138 @@ li img{
 #home_user_badge04{ background: url(../img/badge04.png); }
 #home_user_badge05{ background: url(../img/badge05.png); }
 
-#home_badge_description{
-	display: none;
-	width: 320px;
-	height: 200px;
-	position: absolute;
-	top: 115px;
-	left: 150px;
-	background-color: #4A4D56;
-	border-radius: 0px 0px 0px 10px;
-	opacity: 0.98;
-
-}
-
 #home_buttons{
 	width: 310px;
-	height: 210px;
+	height: 153px;
 	position: absolute;
-	top: 150px;
-	left: 153px;
+	top: 141px;
+	left: 154px;
+}
+
+#home_logout{
+	display: none;
+	width: 80px;
+	height: 15px;
+	background-color: #000000;
+	position: absolute;
+	top: -246px;
+	left: 390px;
+	font-family: sans-serif;
+	font-size: 11px;
+	color: #8E8E8E;
+}
+
+#contenido{
+	width: 630px;
+	height: 560px;
+	position: absolute;
+	left: 470px;
+	top: -246px;
+	overflow-y: scroll;
+	border-radius: 0px 10px 10px 0px;
+}
+
+#form_container{
+	height: 510px;
+	color: #103B8A;
+	font-family: sans-serif;
+}
+
+#form_container input{
+	width: 492px;
+	height: 35px;
+	border-radius: 8px;
+	border: solid;
+	border-width: 1px;
+	border-color: #657084;
+	color: #657084;
+	font-family: sans-serif;
+	padding-left: 10px;
+	margin-top: 20px;
+	margin-left: 160px;
+}
+
+#form_container textarea{
+	width: 492px;
+	border-radius: 8px;
+	border: solid;
+	border-width: 1px;
+	border-color: #657084;
+	color: #657084;
+	font-family: sans-serif;
+	padding-left: 10px;
+	margin-top: 80px;
+	margin-left: -39px;
+}
+
+#form_container select{
+	width: 240px;
+	height: 35px;
+	border-radius: 8px;
+	border: solid;
+	border-width: 1px;
+	border-color: #657084;
+	color: #657084;
+	font-family: sans-serif;
+	padding-left: 10px;
+	margin-top: 20px;
+	margin-left: 160px;
+}
+
+#id_departamento{
+	position: absolute;
+	top: 208px;
+	left: -110px;
+}
+
+#title{
+	position: absolute;
+	top: 60px;
+	left: -110px;
+}
+
+#id_ciudad{
+	position: absolute;
+	top: 208px;
+	left: 142px;
+}
+
+#label_about{
+	position: absolute;
+	top: 57px;
+	left: 40px;
+}
+
+#label_where{
+	position: absolute;
+	top: 199px;
+	left: 40px;
+}
+
+#det_banner_map{
+	width: 247px;
+	height: 208px;
+	border-radius: 0px 10px 10px 0px;
+	margin-left: 296px;
+	margin-top: 93px;
+	border: solid;
+	border-width: 1px;
+}
+
+#banner_streetview{
+	width: 247px;
+	height: 208px;
+	border-radius: 10px 0px 0px 10px;
+	margin-left: 53px;
+	margin-top: 93px;
+	border: solid;
+	border-width: 1px;	
+	float: left;
+}
+
+#home_next{
+	margin-top: 6px;
+	margin-left: 426px;
+	width: 120px;
+	color:#FFFFFF;
 }

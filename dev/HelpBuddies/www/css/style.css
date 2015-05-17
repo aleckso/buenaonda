@@ -1,0 +1,23 @@
+/* Empty. Add your own CSS if you like */
+#home_body{
+	background: url(../img/backgroundHome.png);
+	background-size: 100%;
+}
+
+#home_logo{
+	width: 260px;
+	height: 130px;
+	background: url(../img/home_logo.png);
+	background-repeat: no-repeat;
+	background-size: 260px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 100px;
+}
+
+#home_user_info{
+	width: 90%;
+	height: 300px;
+	margin-left: auto;
+	margin-right: auto;
+}

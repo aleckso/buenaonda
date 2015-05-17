@@ -1,0 +1,51 @@
+/* Empty. Add your own CSS if you like */
+#home_logo{
+	width: 450px;
+	height: 219px;
+	background: url(../img/home_logo.png);
+	background-repeat: no-repeat;
+	background-size: 450px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#facebook_btn{
+	width: 250px;
+	height: 48px;
+	background: url(../img/login_facebook.png);
+	background-repeat: no-repeat;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#home_user_box{
+	width: 320px;
+	height: 170px;
+	border-radius: 11px;
+	background-color: #FFFFFF;
+	margin-left: auto;
+	margin-right: auto;
+	opacity: 0.8;
+}
+
+ul{
+	width: 280px;
+	height: 100px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+li{
+	float: left;
+	color: #535780;
+	list-style-type: none;
+	margin-top: 20px;
+	margin-left: 10px;
+	font-family: sans-serif;
+	font-size: 12px;
+	text-align: left;
+}
+
+li img{
+	border-radius: 5px;
+}

@@ -19,8 +19,8 @@
 }
 
 #home_user_box{
-	width: 320px;
-	height: 170px;
+	width: 490px;
+	height: 150px;
 	border-radius: 11px;
 	background-color: #FFFFFF;
 	margin-left: auto;
@@ -30,7 +30,7 @@
 
 ul{
 	width: 280px;
-	height: 100px;
+	height: 77px;
 	margin-left: auto;
 	margin-right: auto;
 }
@@ -48,4 +48,194 @@ li{
 
 li img{
 	border-radius: 5px;
+}
+
+.home_btn{
+	border: solid;
+	border-width: 1px;
+	width: 230px;
+	height: 45px;
+	border-radius: 5px;
+	background-color: #40ADF0;
+	font-family: sans-serif;
+	font-size: 12px;
+	line-height: 45px;
+	margin-left: 38px;
+	margin-bottom: 8px;
+	cursor: pointer;
+}
+
+.home_btn:hover{
+	background-color: #FA8008;
+}
+
+#home_big_box{
+	width: 950px;
+	height: 560px;
+	background-color: #FFFFFF;
+	opacity: 0.7;
+	position: absolute;
+	top: -246px;
+	left: 150px;
+	border-radius: 10px;
+}
+
+#home_user_box{
+	width: 320px;
+	height: 320px;
+	background: url(../img/home_logo.png);
+	background-size: 100%;
+	overflow: hidden;
+	position: absolute;
+	top: -246px;
+	left: 150px;
+	border-radius: 10px 0px 0px 0px;
+	opacity: 0.3;
+}
+
+#home_user_bar{
+	width: 320px;
+	height: 240px;
+	background-color: #FFFFFF;
+	background-size: 100%;
+	overflow: hidden;
+	position: absolute;
+	top: 74px;
+	left: 150px;
+	border-radius: 0px 0px 0px 10px;
+	border-top: solid;
+	border-color: #7798D3;
+	border-width: 41px;
+	opacity: 0.7;
+}
+
+#home_user_box_back{
+	width: 320px;
+	height: 320px;
+	background-color: #000000;
+	overflow: hidden;
+	position: absolute;
+	top: -246px;
+	left: 150px;
+	border-radius: 10px 0px 0px 0px;
+}
+
+#home_user_photo{
+	width: 150px;
+	height: 150px;
+	background: url(../img/home_logo.png);
+	background-size: 100%;
+	position: absolute;
+	top: -216px;
+	left: 237px;
+	border-radius: 120px;
+	z-index: 1;
+	border: solid;
+}
+
+#home_user_name{
+	width: 320px;
+	height: 20px;
+	position: absolute;
+	top: -46px;
+	left: 150px;
+	font-family: sans-serif;
+	font-size: 16px;
+}
+
+#home_user_level{
+	width: 110px;
+	height: 9px;
+	position: absolute;
+	top: 30px;
+	left: 210px;
+	background-color: #3399FF;
+	border-radius: 5px;
+}
+
+#home_user_level_back{
+	width: 200px;
+	height: 9px;
+	position: absolute;
+	top: 30px;
+	left: 210px;
+	background-color: #103B8A;
+	border-radius: 5px;
+}
+
+#home_user_level_prev{
+	width: 110px;
+	height: 9px;
+	position: absolute;
+	top: 27px;
+	left: 130px;
+	font-family: sans-serif;
+	font-size: 10px;
+	color: #8E8E8E;
+}
+
+#home_user_level_next{
+	width: 110px;
+	height: 9px;
+	position: absolute;
+	top: 27px;
+	left: 382px;
+	font-family: sans-serif;
+	font-size: 10px;
+	color: #8E8E8E;
+}
+
+#home_user_points{
+	width: 320px;
+	height: 20px;
+	position: absolute;
+	top: -22px;
+	left: 150px;
+	font-family: sans-serif;
+	font-size: 16px;
+	color: #FA8008;
+}
+
+#home_user_badges{
+	width: 320px;
+	height: 28px;
+	position: absolute;
+	top: 83px;
+	left: 210px;
+	text-align: center;
+}
+
+.home_badge{
+	width: 25px;
+	height: 25px;
+	background-repeat: no-repeat;
+	float: left;
+	margin-left: 13px;
+}
+
+#home_user_badge01{ background: url(../img/badge01.png); }
+#home_user_badge02{ background: url(../img/badge02.png); }
+#home_user_badge03{ background: url(../img/badge03.png); }
+#home_user_badge04{ background: url(../img/badge04.png); }
+#home_user_badge05{ background: url(../img/badge05.png); }
+
+#home_badge_description{
+	display: none;
+	width: 320px;
+	height: 200px;
+	position: absolute;
+	top: 115px;
+	left: 150px;
+	background-color: #4A4D56;
+	border-radius: 0px 0px 0px 10px;
+	opacity: 0.98;
+
+}
+
+#home_buttons{
+	width: 310px;
+	height: 210px;
+	position: absolute;
+	top: 150px;
+	left: 153px;
 }

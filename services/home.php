@@ -45,25 +45,33 @@ if(!isset($_SESSION)){
     <header>
         <div class="header-content" id="login">
             <div class="header-content-inner">
-                <div id="home_logo"></div>
-                <hr>
-                <p>Do you have a project that helps solve the needs of your city?<br/>Our HelpBuddies can save you!</p>
                 <?php if ($_SESSION['FBID']){ ?>
-                 <script type="text/javascript">window.location="home.php"</script>
-                <div id="home_user_box">
-                    <ul>
-                        <li><img src="https://graph.facebook.com/<?php echo $_SESSION['FBID']; ?>/picture"></li>
-                        <li style="margin-top: 30px;">
-                            <?php echo  $_SESSION['FULLNAME']; ?><br/>
-                            <a href="facebook/logout.php">LogOut</a>
-                        </li>
-                    </ul>
-                    <div class="home_btn" id="home_projects_to_help">Projects to Help</div>
-                    <div class="home_btn" id="home_my_projects">My Projects</div>
-                    <div class="home_btn" id="home_add_project">Add Project</div>
-                </div>
-                <?php }else{ ?>
-                    <a href="facebook/fbconfig.php"><div id="facebook_btn"></div></a>
+                    <div id="home_big_box"></div>
+                    <div id="home_user_box_back"></div>
+                    <div id="home_user_box"></div>
+                    <div id="home_user_photo"></div>
+                    <div id="home_user_name"><?php echo  $_SESSION['FULLNAME']; ?></div>
+                    <div id="home_user_points">15 points</div>
+                    <div id="home_user_level_back"></div>
+                    <div id="home_user_level"></div>
+                    <div id="home_user_level_prev">Level 1</div>
+                    <div id="home_user_level_next">Level 2</div>
+                    <div id="home_user_bar"></div>
+                    <div id="home_user_badges">
+                        <div class="home_badge" id="home_user_badge01" onmouseover="showBadgeDescription();"></div>
+                        <div class="home_badge" id="home_user_badge02" onmouseover="showBadgeDescription();"></div>
+                        <div class="home_badge" id="home_user_badge03" onmouseover="showBadgeDescription();"></div>
+                        <div class="home_badge" id="home_user_badge04" onmouseover="showBadgeDescription();"></div>
+                        <div class="home_badge" id="home_user_badge05" onmouseover="showBadgeDescription();"></div>
+                    </div>
+                    <div id="home_buttons">
+                        <div class="home_btn" id="home_projects_to_help">Projects to Help</div>
+                        <div class="home_btn" id="home_my_projects">My Projects</div>
+                        <div class="home_btn" id="home_add_project">Add Project</div>
+                    </div>
+                    <div id="home_badge_description" onmouseout="hideBadgeDescription();"></div>
+                 <?php }else{ ?>
+                    <script type="text/javascript">window.location="index.php"</script>
                 <? } ?>
             </div>
         </div>
@@ -81,9 +89,11 @@ if(!isset($_SESSION)){
     <script src="js/jquery.easing.min.js"></script>
     <script src="js/jquery.fittext.js"></script>
     <script src="js/wow.min.js"></script>
+    <script src="js/functions.js"></script>
 
     <!-- Custom Theme JavaScript -->
     <script src="js/creative.js"></script>
+    <script type="text/javascript">setFotoPrincipal("http://graph.facebook.com/<?php echo $_SESSION['FBID']; ?>/picture?width=400&height=400");</script>
 
 </body>
 
